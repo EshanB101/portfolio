@@ -1,0 +1,121 @@
+//FONTS
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
+
+//BOOTSRAP ICON
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+//Variables
+$primary-color: #fff;
+$bg-color: linear-gradient(to right, #373b44, #4286f4);
+$font-size: 18px;
+$font_primary: "Inconsolata", monospace;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: $font-size;
+}
+//Styling
+
+nav {
+  color: $primary-color;
+  z-index: 1;
+}
+
+.img-holder {
+  color: $primary-color;
+  font-family: $font_primary;
+  background-image: url("./images/lamp-off.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.newBg {
+  background-image: url("./images/lamp-on.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+.about {
+  width: 100%;
+  margin: 40vh auto;
+
+  h1 {
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+  }
+}
+article {
+  color: $primary_color;
+  background: $bg-color;
+}
+.card {
+  color: #333;
+  font-family: $font_primary;
+  width: 400px;
+  .card-img-top {
+    min-height: 100px;
+  }
+}
+
+#certificate {
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+}
+
+#footer {
+  background: $bg-color;
+  // background: linear-gradient(
+  //   to right,
+  //   #00416a,
+  //   #e4e5e6
+  // );
+  border-top: 3px solid red;
+  border-bottom: 3px solid red;
+  text-align: center;
+  color: #000;
+  padding: 20px 0;
+  height: 100%;
+
+  .email {
+    color: #000;
+  }
+  i {
+    font-size: 8em;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .img-holder {
+    background-size: 100% 100%;
+  }
+  h1 {
+    text-align: center;
+  }
+  .card-img {
+    max-height: 100px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+    .card-img {
+      max-height: 100px;
+    }
+  }
+}

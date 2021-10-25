@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eshan's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+   
+    <!--NAV BAR start-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Eshan's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+              <ul class="navbar-nav ">
+                <li class="nav-item pl-5">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item mx-5">
+                  <a class="nav-link" href="#project-title">Projects</a>
+                </li>
+                <li class="nav-item pl-5">
+                  <a class="nav-link" href="#footer">Contact</a>
+                </li>    
+              </ul>
+            </div>
+     </nav>
+     <!--NAV BAR end-->
+
+     <!--HEADER start-->
+     <div class="img-holder container-fluid mt-5">
+         <!--toggle start-->
+         <div class="d-flex toggleBtn form-check form-switch pt-5 justify-content-center">
+            <input class="chkbox form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+            <label class="form-check-label" for="flexSwitchCheckChecked" style="font-family: Arial, Helvetica; font-size: large;">On no, Turn on LIGHTS!</label>
+          </div>
+        <!--toggle end-->
+          <div class="about" style="display: none;">
+            <h1>class Person={
+              name:"Eshan",
+              age:23;
+              project:"Portfolio"</h1>            
+        </div>
+    </div>
+     <!--HEADER end-->
+    <article class="container-fluid">
+        <h1 id='project-title'>Project list</h1>
+        <div class="projects d-flex flex-wrap justify-content-between">
+            <div class="card m-3">
+                <img class="cardImage card-img-top" src="https://i.ibb.co/J3rSFgz/weather.png" alt="Project#1" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Weather API</h4>
+                  <p class="card-text">Weather App for Thimphu which suggest activity based on current condition. Used API from 'weather.visualcrossing.com' and icons from Skycon</p>
+                  <a href="https://eshanb101.github.io/WeatherApp/" target="_blank" class="btn btn-primary">Go to project</a>
+                </div>
+              </div>
+
+              <div class="card m-3">
+                <img class="cardImage card-img-top" src="./images/cointoss.PNG" alt="Project#1" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">COIN-TOSS // COUNTER</h4>
+                  <p class="card-text">Heads/Tail generator using .Math() function and a simple counter app using click event</p>
+                  <a href="https://codepen.io/eshan-basnet/full/JjyKewJ" target="_blank" class="btn btn-primary">Go to project</a>
+                </div>
+              </div>
+
+              <div class="card m-3">
+                <img class="cardImage card-img-top" src="./images/todo.PNG" alt="Project thumbnail" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">TO-DO List</h4>
+                  <p class="card-text">Simple to-do list to add and remove item by DOM Manipulation. Used JavaScript, bootstrap, HTML</p>
+                  <a href="https://codepen.io/eshan-basnet/full/yLoJxKb" target="_blank" class="btn btn-primary">Go to project</a>
+                </div>
+              </div>
+
+              
+              <div class="card m-3">
+                <img class="cardImage card-img-top" src="https://i.ibb.co/rfHPXfS/Trial.png" alt="Project thumbnail" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Mock Landing Page</h4>
+                  <p class="card-text">Responsive landing page made as part of porect for 'freeCodeCamp' course using HTML and CSS</p>
+                  <a href="https://codepen.io/eshan-basnet/full/PojorPV" target="_blank" class="btn btn-primary">Go to project</a>
+                </div>
+              </div>
+
+              <div class="card m-3">
+                <img class="cardImage card-img-top" src="https://i.ibb.co/M1hkCG0/Capture.png" alt="Project thumbnail" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Local Storage</h4>
+                  <p class="card-text">Signup form with local Storage</p>
+                  <a href="https://codepen.io/eshan-basnet/full/MWvpaJV" target="_blank" class="btn btn-primary">Go to project</a>
+                </div>
+              </div>
+
+              <div class="card m-3">
+                <img class="cardImage card-img-top" src="https://i.ibb.co/y4dd4j4/Landing.png" alt="Project thumbnail" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Technical Documentation</h4>
+                  <p class="card-text">Responsive Mock Technical Documentation page</p>
+                  <a href="https://codepen.io/eshan-basnet/full/BaZyorB" target="_blank" class="btn btn-primary">Go to project</a>
+                </div>
+              </div>
+              
+        </div> 
+        
+        <div id="certificate" class="col-12">
+          <h1>Course Certificate from freecodecamp.org</h1>
+          <img class="certificate-img" src="https://i.ibb.co/19vxydR/Free-code-camp.png" alt="Free-code-camp" border="0">
+          <p style="font-size:25px;">This certificate was obtained by completing responsive web design <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank">course</a> at www.freecodecamp.org<p>
+          <a href="https://www.freecodecamp.org/certification/fcc6cee8cf2-940a-4e0b-b44f-31c3e2c9a46d/responsive-web-design" target="_blank" style="font-size:25px;">Verification</a>
+        </div>
+    </article>
+
+    <footer id="footer" class="col-12 ">
+        <h1>Contact: </h1>
+        <a href = "mailto:ebnet420@gmail.com" class="email">ebnet420@gmail.com</a>
+        <p>+975 17859851</p>          
+        <span><a id="profile-link" href="https://github.com/EshanB101" target="_blank"><i class="bi-github"></i></a>
+        </span>
+        <span><a href="https://www.facebook.com/fatebosss/" target="_blank"><i class="bi-facebook"></i></a>
+        </span>
+        <span><a href="https://www.instagram.com/fateboss/" target="_blank"><i class="bi-instagram"></i></a>
+        </span>            
+    </footer>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+    
+    
+  </body>
+</html>
